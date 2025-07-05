@@ -29,8 +29,28 @@ export default function Home() {
           Sans frais, sans engagement. En échange ? Juste votre avis honnête après livraison.
           </p>
           <p className="text-md text-gray-600 leading-relaxed">
-          Remplissez le formulaire ci-dessous et profitez de l’offre Dès maintenant .
+          Remplissez le formulaire ci-dessous et profitez de l'offre Dès maintenant .
           </p>
+        </div>
+      </section>
+
+      {/* Vidéo */}
+      <section className="max-w-2xl w-full mb-12 relative z-10 transform hover:scale-105 transition-transform duration-300">
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20">
+          <h2 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Découvrez notre travail
+          </h2>
+          <div className="relative rounded-xl overflow-hidden shadow-lg">
+            <video
+              className="w-full h-auto max-h-96"
+              controls
+              preload="metadata"
+              poster="/medecin.png"
+            >
+              <source src="/myku.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+          </div>
         </div>
       </section>
 
@@ -117,6 +137,22 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-100 group-hover:bg-black/60 transition-all">
                 <span className="text-white text-lg font-semibold drop-shadow-lg">Site d'exemple pour ophtalmologue</span>
+              </div>
+            </a>
+            
+            <a
+              href="https://dentiste-seven.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 relative group"
+            >
+              <img
+                src="/dentiste.avif"
+                alt="Projet 2"
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-100 group-hover:bg-black/60 transition-all">
+                <span className="text-white text-lg font-semibold drop-shadow-lg">Site d'exemple pour dentiste</span>
               </div>
             </a>
             
