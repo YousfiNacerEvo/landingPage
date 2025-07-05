@@ -22,13 +22,14 @@ export default function Home() {
       <section className="max-w-2xl w-full mb-12 text-center relative z-10 transform hover:scale-105 transition-transform duration-300">
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20">
           <h1 className="text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent animate-pulse">
-            Bienvenue sur votre espace dédié aux médecins
+          Vous gérez un cabinet médical en Algérie ?  On vous offre un site web pro (valeur 40.000 DA) mais pour vous <strong>GRATUITEMENT</strong> !
           </h1>
           <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-            Vous êtes médecin et souhaitez développer votre présence en ligne, partager vos projets ou faciliter la prise de contact ?
+          Nous créons <strong>gratuitement </strong> un site moderne et professionnel pour votre cabinet.
+          Sans frais, sans engagement. En échange ? Juste votre avis honnête après livraison.
           </p>
           <p className="text-md text-gray-600 leading-relaxed">
-            Je vous accompagne dans la création de votre site,Site pro offert pour cliniques-en échange d’un simple témoignage. plus que 3 places restantes !!.
+          Remplissez le formulaire ci-dessous et profitez de l’offre Dès maintenant .
           </p>
         </div>
       </section>
