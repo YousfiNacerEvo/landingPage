@@ -1,103 +1,153 @@
-import Image from "next/image";
+"use client";
+
+import React from "react";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex flex-col items-center py-12 px-4 sm:px-8 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+      <div className="absolute top-0 right-0 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Image médecin visible en haut */}
+      <img
+        src="/medecin.png"
+        alt="Médecin illustratif"
+        className="mx-auto mb-8 w-[220px] sm:w-[300px] md:w-[340px] h-auto z-10 relative drop-shadow-xl rounded-2xl"
+        style={{objectFit: 'contain'}}
+      />
+
+      {/* Offre */}
+      <section className="max-w-2xl w-full mb-12 text-center relative z-10 transform hover:scale-105 transition-transform duration-300">
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent animate-pulse">
+            Bienvenue sur votre espace dédié aux médecins
+          </h1>
+          <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            Vous êtes médecin et souhaitez développer votre présence en ligne, partager vos projets ou faciliter la prise de contact ?
+          </p>
+          <p className="text-md text-gray-600 leading-relaxed">
+            Je vous accompagne dans la création de votre site,Site pro offert pour cliniques-en échange d’un simple témoignage. plus que 3 places restantes !!.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Formulaire */}
+      <section className="max-w-2xl w-full mb-12 relative z-10 flex justify-center transform hover:scale-105 transition-transform duration-300">
+        <div className="w-full bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-2xl p-8 text-white">
+          <h2 className="text-2xl font-bold mb-6 text-center">Contactez-moi</h2>
+          <form
+            action="https://formspree.io/f/xyzjaeyq"
+            method="POST"
+            className="flex flex-col gap-6"
+          >
+            <div className="group">
+              <label htmlFor="nom" className="block text-sm font-semibold mb-2 text-blue-100">Nom</label>
+              <input 
+                type="text" 
+                id="nom" 
+                name="nom" 
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-300 backdrop-blur-sm" 
+                placeholder="Votre nom"
+                required 
+              />
+            </div>
+            <div className="group">
+              <label htmlFor="prenom" className="block text-sm font-semibold mb-2 text-blue-100">Prénom</label>
+              <input 
+                type="text" 
+                id="prenom" 
+                name="prenom" 
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-300 backdrop-blur-sm" 
+                placeholder="Votre prénom"
+                required 
+              />
+            </div>
+            <div className="group">
+              <label htmlFor="email" className="block text-sm font-semibold mb-2 text-blue-100">Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-300 backdrop-blur-sm" 
+                placeholder="votre@email.com"
+                required 
+              />
+            </div>
+            <div className="group">
+              <label htmlFor="numero" className="block text-sm font-semibold mb-2 text-blue-100">Numéro</label>
+              <input 
+                type="tel" 
+                id="numero" 
+                name="numero" 
+                className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent transition-all duration-300 backdrop-blur-sm" 
+                placeholder="Votre numéro"
+                required 
+              />
+            </div>
+            <button 
+              type="submit" 
+              className="mt-4 bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* Projets */}
+      <section className="max-w-2xl w-full relative z-10 transform hover:scale-105 transition-transform duration-300">
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20">
+          <h2 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Mes projets
+          </h2>
+          <div className="grid gap-4">
+            <a
+              href="https://oftalmo-page.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 relative group"
+            >
+              <img
+                src="/ofta.webp"
+                alt="Projet 1"
+                className="w-full h-48 object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-100 group-hover:bg-black/60 transition-all">
+                <span className="text-white text-lg font-semibold drop-shadow-lg">Site d'exemple pour ophtalmologue</span>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+      </section>
+
+      <style jsx>{`
+        @keyframes blob {
+          0% {
+            transform: translate(0px, 0px) scale(1);
+          }
+          33% {
+            transform: translate(30px, -50px) scale(1.1);
+          }
+          66% {
+            transform: translate(-20px, 20px) scale(0.9);
+          }
+          100% {
+            transform: translate(0px, 0px) scale(1);
+          }
+        }
+        .animate-blob {
+          animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+          animation-delay: 4s;
+        }
+      `}</style>
     </div>
   );
 }
