@@ -4,42 +4,42 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 flex flex-col items-center py-16 px-4 sm:px-8 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-slate-50 flex flex-col items-center py-16 px-4 sm:px-8 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23000000%22%20fill-opacity%3D%220.02%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
       
       {/* Gradient orbs */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse animation-delay-2000"></div>
+      <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-gray-200/30 to-slate-200/30 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-slate-200/30 to-gray-200/30 rounded-full blur-3xl animate-pulse animation-delay-2000"></div>
 
       {/* Header Section */}
       <div className="max-w-4xl w-full mb-16 text-center relative z-10">
-        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-12 border border-white/10 shadow-2xl">
+        <div className="bg-white/90 backdrop-blur-xl rounded-3xl p-12 border border-gray-200 shadow-2xl">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-800 via-gray-700 to-slate-700 bg-clip-text text-transparent">
                 Site Web Professionnel
               </span>
               <br />
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-slate-600 to-gray-600 bg-clip-text text-transparent">
                 Pour Votre Cabinet
               </span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Créons ensemble votre <span className="text-cyan-400 font-semibold">présence digitale</span> moderne et professionnelle. 
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Créons ensemble votre <span className="text-gray-800 font-semibold">présence digitale</span> moderne et professionnelle. 
               <br />
-              <span className="text-2xl font-bold text-white mt-2 block">
+              <span className="text-2xl font-bold text-gray-900 mt-2 block">
                 Offert gratuitement pour les cabinets médicaux en Algérie
               </span>
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <div className="bg-gradient-to-r from-blue-600 to-cyan-600 px-6 py-3 rounded-full text-white font-semibold shadow-lg">
+              <div className="bg-gradient-to-r from-gray-600 to-slate-600 px-6 py-3 rounded-full text-white font-semibold shadow-lg">
                 ✓ Site moderne et responsive
               </div>
-              <div className="bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-3 rounded-full text-white font-semibold shadow-lg">
+              <div className="bg-gradient-to-r from-slate-600 to-gray-600 px-6 py-3 rounded-full text-white font-semibold shadow-lg">
                 ✓ Design professionnel
               </div>
-              <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-3 rounded-full text-white font-semibold shadow-lg">
+              <div className="bg-gradient-to-r from-gray-700 to-slate-700 px-6 py-3 rounded-full text-white font-semibold shadow-lg">
                 ✓ 100% gratuit
               </div>
             </div>
@@ -49,8 +49,8 @@ export default function Home() {
 
       {/* Video Section */}
       <section className="max-w-4xl w-full mb-16 relative z-10">
-        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 shadow-2xl">
-          <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+        <div className="bg-white/90 backdrop-blur-xl rounded-3xl p-8 border border-gray-200 shadow-2xl">
+          <h2 className="text-3xl font-bold mb-8 text-center bg-gradient-to-r from-gray-700 to-slate-700 bg-clip-text text-transparent">
             Découvrez Notre Expertise
           </h2>
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* Contact Form */}
       <section className="max-w-2xl w-full mb-16 relative z-10">
-        <div className="bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-cyan-600/20 backdrop-blur-xl rounded-3xl p-10 border border-white/20 shadow-2xl">
+        <div className="bg-gradient-to-br from-gray-600 to-slate-700 rounded-3xl p-10 border border-gray-300 shadow-2xl">
           <h2 className="text-3xl font-bold mb-8 text-center text-white">
             Commencez Votre Projet
           </h2>
@@ -80,46 +80,46 @@ export default function Home() {
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="group">
-                <label htmlFor="nom" className="block text-sm font-semibold mb-3 text-cyan-200">Nom</label>
+                <label htmlFor="nom" className="block text-sm font-semibold mb-3 text-gray-100">Nom</label>
                 <input 
                   type="text" 
                   id="nom" 
                   name="nom" 
-                  className="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 backdrop-blur-sm text-lg" 
+                  className="w-full px-6 py-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-300 backdrop-blur-sm text-lg" 
                   placeholder="Votre nom"
                   required 
                 />
               </div>
               <div className="group">
-                <label htmlFor="prenom" className="block text-sm font-semibold mb-3 text-cyan-200">Prénom</label>
+                <label htmlFor="prenom" className="block text-sm font-semibold mb-3 text-gray-100">Prénom</label>
                 <input 
                   type="text" 
                   id="prenom" 
                   name="prenom" 
-                  className="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 backdrop-blur-sm text-lg" 
+                  className="w-full px-6 py-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-300 backdrop-blur-sm text-lg" 
                   placeholder="Votre prénom"
                   required 
                 />
               </div>
             </div>
             <div className="group">
-              <label htmlFor="email" className="block text-sm font-semibold mb-3 text-cyan-200">Email</label>
+              <label htmlFor="email" className="block text-sm font-semibold mb-3 text-gray-100">Email</label>
               <input 
                 type="email" 
                 id="email" 
                 name="email" 
-                className="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 backdrop-blur-sm text-lg" 
+                className="w-full px-6 py-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-300 backdrop-blur-sm text-lg" 
                 placeholder="votre@email.com"
                 required 
               />
             </div>
             <div className="group">
-              <label htmlFor="numero" className="block text-sm font-semibold mb-3 text-cyan-200">Numéro de téléphone</label>
+              <label htmlFor="numero" className="block text-sm font-semibold mb-3 text-gray-100">Numéro de téléphone</label>
               <input 
                 type="tel" 
                 id="numero" 
                 name="numero" 
-                className="w-full px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-300 backdrop-blur-sm text-lg" 
+                className="w-full px-6 py-4 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-300 backdrop-blur-sm text-lg" 
                 placeholder="Votre numéro"
                 required 
               />
@@ -136,8 +136,8 @@ export default function Home() {
 
       {/* Portfolio Section */}
       <section className="max-w-6xl w-full relative z-10">
-        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10 shadow-2xl">
-          <h2 className="text-3xl font-bold mb-10 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+        <div className="bg-white/90 backdrop-blur-xl rounded-3xl p-10 border border-gray-200 shadow-2xl">
+          <h2 className="text-3xl font-bold mb-10 text-center bg-gradient-to-r from-gray-700 to-slate-700 bg-clip-text text-transparent">
             Nos Réalisations
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
